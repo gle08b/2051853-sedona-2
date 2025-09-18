@@ -14,13 +14,39 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans" , sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #242424;
   background-color: #FFFFFF;
+}
+
+.navigation{
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.navigation-user-list{
+  margin: 0;
+  padding: 0;
+  max-width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -34,7 +60,7 @@ body {
   list-style-type: none;
 }
 
-.button{
+.button {
   color: #FFFFFF;
   border-radius: 4px;
   text-transform: uppercase;
@@ -43,18 +69,29 @@ body {
   font-weight: 700;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
 }
 
 .navigation-button {
   background-color: #756157;
 }
 
+ul,
+ol {
+  margin: none;
+  padding: none;
+  list-style: none;
+}
 
 .main-index {
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
+}
+
+.main-container{
+  flex-grow: 1;
 }
 
 .intro {
@@ -81,7 +118,15 @@ body {
   text-align: center;
 }
 
+.advantages-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .advantages-item {
+  width: 400px;
   padding-top: 103px;
   padding-bottom: 103px;
   padding-right: 85px;
@@ -90,6 +135,7 @@ body {
 }
 
 .advantages-item-town {
+  width: 400px;
   padding-top: 103px;
   padding-bottom: 103px;
   color: #FFFFFF;
@@ -97,6 +143,7 @@ body {
 }
 
 .advantages-item-bridge {
+  width: 400px;
   padding-top: 103px;
   padding-bottom: 103px;
   color: #FFFFFF;
@@ -116,6 +163,13 @@ body {
   line-height: 21px;
 }
 
+.services-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-heading {
   font-size: 30px;
   line-height: 36px;
@@ -133,6 +187,7 @@ body {
 }
 
 .services-item {
+  width: 400px;
   padding-top: 85px;
   padding-bottom: 85px;
   text-align: center;
@@ -201,6 +256,24 @@ body {
 
 .newsletter-button{
   background-color: #82B3D3;
+}
+
+.social-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-item{
+  width: 47,33px;
+}
+
+.main-footer{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Каталог */
