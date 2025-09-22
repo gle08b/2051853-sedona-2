@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="header-catalog">
-      <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
+    <header class="main-header">
       <nav class="navigation">
-        <ul class="naviagtion-list">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
+          <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="naviagtion-list navigation-user">
+        <ul class="navigation-user-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -37,7 +37,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main container main-inner">
+      <div class="page-container">
       <section class="filters">
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ul class="filter-nav">
@@ -137,6 +138,8 @@
             </a>
           </li>
         </ul>
+        </div>
+        <div class="hotels">
         <div class="hotel-card">
           <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Звёздное небо, вид из ущелья">
           <a class="hotel-card-link" href="#">
@@ -185,6 +188,7 @@
           <img src="#" alt="2 звезды">
           <p class="hotel-rank">Рейтинг 8,5</p>
         </div>
+        </div>
         <ul class="pagination">
           <li class="pagination-item">
             <button type="button" class="button pagination-button-current">1</button>
@@ -216,26 +220,29 @@
           </button>
         </form>
       </section>
+      </div>
     </main>
-    <footer class="footer-catalog">
+    <footer class="main-footer">
       <ul class="social-list">
         <li class="social-list-item">
-          <a class="button" href="#">
+          <a class="social-list-button">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Телеграм</span>
+          <a class="social-list-button">
+            <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="button" href="#">
+          <a class="social-list-button">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a class="contacts-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <div>
+        <a class="contacts-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="images/logo-htmlacademy.svg" width="115" height="33" alt="Ссылка на курс HTML Academy">
       </a>
