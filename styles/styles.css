@@ -14,8 +14,17 @@
   font-display: swap;
 }
 
-html{
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,12 +46,16 @@ body {
 }
 
 .navigation-list{
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 339px;
+  max-width: 339px;
 }
 
 .navigation-user-list{
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   max-width: 268px;
@@ -78,23 +91,25 @@ body {
 
 ul,
 ol {
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.main-index {
-  background-image: url(../images/index-background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+.main-index{
   text-align: center;
 }
 
-.main-container{
+.container{
+  max-width: 1200px;
+  margin-inline: auto;
   flex-grow: 1;
 }
 
 .intro {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   padding-bottom: 69px;
 }
 
@@ -122,6 +137,7 @@ ol {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -134,16 +150,8 @@ ol {
   text-align: center;
 }
 
-.advantages-item-town {
-  width: 400px;
-  padding-top: 103px;
-  padding-bottom: 103px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.advantages-item-bridge {
-  width: 400px;
+.advantages-item-fullwidth {
+  width: 100%;
   padding-top: 103px;
   padding-bottom: 103px;
   color: #FFFFFF;
@@ -278,6 +286,12 @@ ol {
 
 /* Каталог */
 
+.catalog-filter{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
 .catalog-filter-button-show {
   background-color: #82B3D3;
 }
@@ -293,6 +307,8 @@ ol {
   color: #FFFFFF;
   padding-top: 35px;
   padding-bottom: 70px;
+  padding: 70px;
+  padding-left: 70px;
 }
 
 .filter-title {
@@ -314,14 +330,20 @@ ol {
 }
 
 .catalog {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .hotels-found {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.hotels{
+  display: flex;
 }
 
 .hotel-card-title {
@@ -362,6 +384,9 @@ ol {
 }
 
 .pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 80px;
   text-align: center;
 }
 

@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="container">
     <header class="main-header">
       <nav class="navigation">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
@@ -37,13 +37,16 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container main-index">
+    <main class="main-index">
       <section class="intro">
-        <img class="intro-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
-        <h1 class="intro-name">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
-        <p class="intro-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</h1>
+        <img class="intro-image" src="images/welcome.svg" width="458" height="352" alt="" aria-hidden="true">
       </section>
       <section class="advantages">
+        <hgroup class="advantages-title-container">
+          <h1 class="advantages-name">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+          <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </hgroup>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item-fullwidth">
