@@ -77,7 +77,7 @@ body {
   color: #242424;
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 16px 20px;
   list-style-type: none;
 }
 
@@ -104,14 +104,19 @@ ol {
   list-style: none;
 }
 
-.main-index{
+.main-index {
   text-align: center;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin-inline: auto;
   flex-grow: 1;
+}
+
+.logo-picture {
+  margin-left: 70px;
+  margin-right: 30px;
 }
 
 .intro {
@@ -139,6 +144,15 @@ ol {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.advantages-title{
+  padding-top: 151px;
+  padding-bottom: 25px;
+}
+
+.advantages-description{
+  padding-bottom: 90px;
 }
 
 .advantages-list {
@@ -178,13 +192,13 @@ ol {
   grid-row: 1 / 2;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .advantages-item-pic img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -211,11 +225,11 @@ ol {
   line-height: 21px;
 }
 
-.services-list{
+.services-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .services-heading {
@@ -235,10 +249,19 @@ ol {
 }
 
 .services-item {
-  width: 400px;
-  padding-top: 85px;
-  padding-bottom: 85px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 385px;
+}
+
+.services-item:nth-child(1){
+  background-color: rgba(131, 179, 211, 0.122);
+}
+
+.services-item:nth-child(3n){
+  background-color: rgba(131, 179, 211, 0.122);
 }
 
 .services-title {
@@ -271,17 +294,19 @@ ol {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 54px;
 }
 
 .appointment-button {
+  width: 376px;
+  height: 52px;
   background-color: #756157;
 }
 
 .newsletter {
   padding-top: 96px;
   padding-bottom: 104px;
-  padding-right: 258px;
-  padding-left: 258px;
   text-align: center;
   background-image: url(../images/Subscribe.png);
   background-repeat: no-repeat;
