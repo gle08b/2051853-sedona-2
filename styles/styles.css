@@ -327,22 +327,40 @@ ol {
   font-weight: 400;
 }
 
-.newsletter-button{
+.newsletter-form {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.field{
+  margin: 0;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  border-radius: 0;
+}
+
+.newsletter-button {
   background-color: #82B3D3;
 }
 
-.social-list{
+.social-list {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.social-list-item{
+.social-list-item {
   width: 47,33px;
 }
 
-.main-footer{
+.main-footer {
   padding: 0;
   margin: 0;
   display: flex;
@@ -351,7 +369,7 @@ ol {
 
 /* Каталог */
 
-.catalog-filter{
+.catalog-filter {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -361,7 +379,7 @@ ol {
   background-color: #82B3D3;
 }
 
-.catalog-filter-button{
+.catalog-filter-button {
   background-color: transparent;
 }
 
@@ -407,7 +425,7 @@ ol {
   font-weight: 700;
 }
 
-.hotels{
+.hotels {
   display: flex;
 }
 
