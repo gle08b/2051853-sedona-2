@@ -38,6 +38,33 @@ body {
   background-color: #FFFFFF;
 }
 
+.button {
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -81,18 +108,6 @@ body {
   list-style-type: none;
 }
 
-.button {
-  color: #FFFFFF;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border: none;
-}
-
 .navigation-button {
   background-color: #756157;
 }
@@ -122,37 +137,13 @@ ol {
 .intro {
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding-bottom: 69px;
-}
-
-.intro-image {
+  background-size: cover;
+  min-height: 485px;
   padding-top: 51px;
 }
 
-.intro-name {
-  padding-top: 126px;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.intro-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.advantages-title{
-  padding-top: 151px;
-  padding-bottom: 25px;
-}
-
-.advantages-description{
-  padding-bottom: 90px;
+.advantages-heading {
+  padding: 69px 12px;
 }
 
 .advantages-list {
@@ -221,8 +212,12 @@ ol {
 
 .advantages-item-description {
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
+}
+
+.services-heading {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .services-list {
@@ -230,22 +225,6 @@ ol {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.services-heading {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  padding-top: 64px;
-  text-align: center;
-}
-
-.services-heading-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  padding-bottom: 64px;
-  text-align: center;
 }
 
 .services-item {
@@ -267,8 +246,6 @@ ol {
 .services-title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .services-description {
@@ -283,17 +260,7 @@ ol {
   text-align: center;
 }
 
-.appointment-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.appointment-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
+.appointment-title-description {
   padding-top: 20px;
   padding-bottom: 54px;
 }
@@ -307,35 +274,34 @@ ol {
 .newsletter {
   padding-top: 96px;
   padding-bottom: 104px;
-  text-align: center;
   background-image: url(../images/Subscribe.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 }
 
-.newsletter-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
+.newsletter-body {
+  width: 100%;
+  max-width: 684px;
+  margin: 0 auto;
 }
 
-.newsletter-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
+.newsletter-title {
+  color: #FFFFFF;
+}
+
+.newsletter-title-description {
+  color: #FFFFFF;
 }
 
 .newsletter-form {
   display: flex;
   border-radius: 4px;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
 }
 
-.field{
+.newsletter-field {
+  flex-grow: 1;
   margin: 0;
   padding: 14px 20px;
   font-size: 18px;
@@ -347,6 +313,10 @@ ol {
 
 .newsletter-button {
   background-color: #82B3D3;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 36px;
+  width: 232px;
 }
 
 .social-list {
@@ -358,6 +328,13 @@ ol {
 
 .social-list-item {
   width: 47,33px;
+}
+
+.contacts-tel{
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #242424;
 }
 
 .main-footer {
