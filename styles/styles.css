@@ -39,15 +39,20 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
   border-radius: 4px;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .title {
@@ -370,7 +375,6 @@ ol {
   align-items: center;
   width: 48px;
   height: 40px;
-  background-color: red;
 }
 
 /* Каталог */
@@ -381,12 +385,31 @@ ol {
   max-width: 1200px;
 }
 
+.catalog-filter-group {
+  border: none;
+}
+
 .catalog-filter-button-show {
   background-color: #82B3D3;
+  width: 191px;
 }
 
 .catalog-filter-button {
   background-color: transparent;
+  width: 191px;
+}
+
+.catalog-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  border: 2px solid #F2F2F2;
+  border-radius: 4px;
 }
 
 .filters {
@@ -410,6 +433,11 @@ ol {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding-bottom: 32px;
+}
+
+.catalog-filter-item {
+  padding-bottom: 16px;
 }
 
 .control-input {
@@ -420,13 +448,14 @@ ol {
 
 .sorting-elements {
   display: flex;
+  gap: 8px;
 }
 
 .catalog {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .hotels-found {
@@ -438,14 +467,30 @@ ol {
 .hotels {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 20px;
+}
+
+.hotel-card {
+  background-color: #FFFFFF;
+  border: 2px solid #F2F2F2;
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .hotel-card-title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #242424;
+  text-decoration: none;
+}
+
+.hotel-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .hotel-card-container {
@@ -488,7 +533,7 @@ ol {
   width: 140px;
 }
 
-.hotel-rank-container {
+.hotel-rate-container {
   display: flex;
   justify-content: center;
   gap: 70px;
@@ -507,7 +552,7 @@ ol {
   margin: auto;
 }
 
-.hotel-rank {
+.hotel-rate {
   display: flex;
   justify-content: center;
   align-items: center;
