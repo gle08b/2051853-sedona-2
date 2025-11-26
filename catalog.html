@@ -38,7 +38,6 @@
       </nav>
     </header>
     <main class="main-inner">
-      <div class="page-container">
       <section class="filters">
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ul class="filter-nav">
@@ -114,32 +113,35 @@
         </form>
       </section>
       <section class="catalog">
-        <h2 class="hotels-found">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка гостиниц по категориям">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <ul class="sorting-elements">
-          <li class="sorting-elements-item">
-            <a href="#">
-              <span class="visually-hidden">Три в ряд</span>
-              <img class="sorting-elements-image" src="images/View1.svg" alt="Три элемента в ряд">
-             </a>
-          </li>
-          <li class="sorting-elements-item">
-            <a href="#">
-              <span class="visually-hidden">Один в ряду</span>
-              <img class="sorting-elements-image" src="images/View2.svg" alt="Один элемент в ряду">
-            </a>
-          </li>
-          <li class="sorting-elements-item">
-            <a href="#">
-              <span class="visually-hidden">Списком</span>
-              <img class="sorting-elements-image" src="images/View3.svg" alt="Элементы списком">
-            </a>
-          </li>
-        </ul>
+        <div class="catalog-header">
+          <h2 class="title">Найдено гостиниц: 38</h2>
+          <div class="catalog-controls">
+            <select class="select-control" aria-label="Сортировка гостиниц по категориям">
+              <option value="popular">Сначала популярное</option>
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <ul class="sorting-elements">
+              <li class="sorting-elements-item">
+                <a href="#">
+                  <span class="visually-hidden">Три в ряд</span>
+                  <img class="sorting-elements-image" src="images/View1.svg" alt="Три элемента в ряд">
+                </a>
+              </li>
+              <li class="sorting-elements-item">
+                <a href="#">
+                  <span class="visually-hidden">Один в ряду</span>
+                  <img class="sorting-elements-image" src="images/View2.svg" alt="Один элемент в ряду">
+                </a>
+              </li>
+              <li class="sorting-elements-item">
+                <a href="#">
+                  <span class="visually-hidden">Списком</span>
+                  <img class="sorting-elements-image" src="images/View3.svg" alt="Элементы списком">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="hotels">
           <li class="hotels-item">
@@ -153,11 +155,11 @@
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 4000₽ </span>
                 </p>
-              <div class="hotel-button-container">
+              <div class="hotel-card-container">
                 <a class="button hotel-more-button" href="#">Подробнее</a>
                 <button type="button" class="button hotel-favourites-button">В Избранное</button>
               </div>
-              <div class="hotel-rate-container">
+              <div class="hotel-card-container">
                 <div class="hotels-images-container">
                   <img src="images/star 1.svg" width="18px" height="17px" alt="1 звездa">
                   <img src="images/star 2.svg" width="18px" height="17px" alt="2 звезды">
@@ -180,11 +182,11 @@
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 5000₽ </span>
                 </p>
-              <div class="hotel-button-container">
+              <div class="hotel-card-container">
                 <a class="button hotel-more-button" href="#">Подробнее</a>
                 <button type="button" class="button hotel-favourites-button-current">В Избранном</button>
               </div>
-              <div class="hotel-rate-container">
+              <div class="hotel-card-container">
                 <div class="hotels-images-container">
                   <img src="images/star 1.svg" width="18px" height="17px" alt="1 звездa">
                   <img src="images/star 2.svg" width="18px" height="17px" alt="2 звезды">
@@ -207,11 +209,11 @@
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 2500₽ </span>
                 </p>
-              <div class="hotel-button-container">
+              <div class="hotel-card-container">
                 <a class="button hotel-more-button" href="#">Подробнее</a>
                 <button type="button" class="button hotel-favourites-button">В Избранное</button>
               </div>
-              <div class="hotel-rate-container hotel-third-rank-container">
+              <div class="hotel-card-container">
                 <div class="hotels-images-container">
                   <img src="images/star 1.svg" width="18px" height="17px" alt="1 звездa">
                   <img src="images/star 2.svg" width="18px" height="17px" alt="2 звезды">
@@ -233,11 +235,11 @@
                   <span class="hotel-card-type">Гостиница</span>
                   <span class="hotel-card-price">От 1500₽ </span>
                 </p>
-              <div class="hotel-button-container">
+              <div class="hotel-card-container">
                 <a class="button hotel-more-button" href="#">Подробнее</a>
                 <button type="button" class="button hotel-favourites-button">В Избранное</button>
               </div>
-              <div class="hotel-rate-container hotel-second-rank-container">
+              <div class="hotel-card-container">
                 <div class="hotels-images-container">
                   <img src="images/star 1.svg" width="18px" height="17px" alt="1 звездa">
                   <img src="images/star 2.svg" width="18px" height="17px" alt="2 звезды">
@@ -247,7 +249,7 @@
             </div>
             </article>
           </li>
-      </ul>
+        </ul>
         <ul class="pagination">
           <li class="pagination-item">
             <button type="button" class="button pagination-button-current">1</button>
@@ -279,7 +281,6 @@
           </button>
         </form>
       </section>
-      </div>
     </main>
     <footer class="main-footer">
       <ul class="social-list">
