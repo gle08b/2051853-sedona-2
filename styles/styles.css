@@ -379,30 +379,72 @@ ol {
 
 /* Каталог */
 
-.catalog-filter {
+.catalog-filter-form {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
 }
 
 .catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog-filter-button-show {
+.catalog-filter-form-button-submit {
+  width: 100%;
   background-color: #82B3D3;
-  width: 191px;
 }
 
-.catalog-filter-button {
+.catalog-filter-form-button-reset {
+  width: 100%;
   background-color: transparent;
-  width: 191px;
 }
 
-.catalog-filter-container {
+.catalog-filter-action-block {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  row-gap: 32px;
+  width: 100%;
+  max-width: 191px;
+}
+
+.catalog-filter-section {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 70px;
+}
+
+.fields-block {
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fields-block-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 143px;
+  column-gap: 8px;
+  padding: 12px 20px;
+  background-color: #FFFFFF;
+}
+
+.fields-block-input {
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.fields-block-label {
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  opacity: 0.3;
 }
 
 .select-control {
