@@ -114,8 +114,6 @@ body {
   text-decoration: none;
   margin: 0;
   padding-right: 16px;
-  padding-left: 16px;
-  padding-top: 20px;
   padding-bottom: 20px;
   list-style-type: none;
 }
@@ -124,6 +122,13 @@ body {
   background-color: #756157;
   padding-right: 34px;
   padding-left: 34px;
+}
+
+.navigation-image {
+  display: flex;
+  gap: 20px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 ul,
@@ -287,6 +292,7 @@ ol {
   width: 376px;
   height: 52px;
   background-color: #756157;
+  margin-inline: auto;
 }
 
 .newsletter {
@@ -378,29 +384,28 @@ ol {
 }
 
 /* Каталог */
-
-.catalog-filter-form {
+.filter-form {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog-filter-group {
+.filter-group {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-.catalog-filter-form-button-submit {
+.filter-form-button-submit {
   width: 100%;
   background-color: #82B3D3;
 }
 
-.catalog-filter-form-button-reset {
+.filter-form-button-reset {
   width: 100%;
   background-color: transparent;
 }
 
-.catalog-filter-action-block {
+.filter-action-block {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
@@ -408,7 +413,7 @@ ol {
   max-width: 191px;
 }
 
-.catalog-filter-section {
+.filter-section {
   display: flex;
   justify-content: space-between;
   column-gap: 70px;
@@ -465,20 +470,20 @@ ol {
   padding-left: 70px;
 }
 
-.filter-title {
+.filter-title-main {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
 
-.catalog-filter-title {
+.filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   padding-bottom: 32px;
 }
 
-.catalog-filter-item {
+.filter-item {
   padding-bottom: 16px;
 }
 
@@ -618,13 +623,13 @@ ol {
 .pagination-button-current {
   background-color: #F2F2F2;
   color: #242424;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
 }
 
 .pagination-button {
   background-color: #82B3D3;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
 }
 
