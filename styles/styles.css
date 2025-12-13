@@ -87,6 +87,7 @@ body {
 .navigation {
   display: flex;
   margin: 0 auto;
+  max-height: 64px;
 }
 
 .navigation-list {
@@ -124,9 +125,9 @@ body {
   padding-left: 34px;
 }
 
-.navigation-image {
+ .navigation-image {
+  padding-top: 32px;
   display: flex;
-  gap: 20px;
   min-width: 20px;
   min-height: 20px;
 }
@@ -474,6 +475,12 @@ ol {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+}
+
+.filter-nav {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 50px;
 }
 
 .filter-title {
