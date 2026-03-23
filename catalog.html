@@ -52,7 +52,10 @@
             </a>
           </li>
           <li class="filter-nav-item">
-            <a class="filter-nav-link">Гостиницы</a>
+            <img class="filter-nav-image arrow" src="images/arrow.svg">
+          </li>
+          <li class="filter-nav-item">
+            <a class="filter-nav-link filter-nav-link-hotel" href="#">Гостиницы</a>
           </li>
         </ul>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -117,13 +120,15 @@
                 <label class="fields-block-label" for="max-price">до</label>
               </div>
             </div>
-            <div>
-              <button type="button">
-                <span class="visually-hidden">Ползунок диапазона: минимальное значение</span>
-              </button>
-              <button type="button">
-                <span class="visually-hidden">Ползунок диапазона: максимальное значение</span>
-              </button>
+            <div class="fields-block-range">
+              <div class="fields-block-bar">
+                <button type="button" class="range-toggle toggle-min-button">
+                  <span class="visually-hidden">Ползунок диапазона: минимальное значение</span>
+                </button>
+                <button type="button" class="range-toggle toggle-max-button">
+                  <span class="visually-hidden">Ползунок диапазона: максимальное значение</span>
+                </button>
+              </div>
             </div>
           </fieldset>
           <div class="filter-action-block">
@@ -284,7 +289,7 @@
           <li class="pagination-item">
              <button type="button" class="button pagination-button">4</button>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-item-ellipsis">
             <span class="pagination-ellipsis">...</span>
           </li>
           <li class="pagination-item">
@@ -306,19 +311,19 @@
     <footer class="main-footer">
       <ul class="social-list">
         <li class="social-list-item">
-          <a class="social-list-button">
+          <a class="social-list-button" href="https://vk.com/htmlacademy">
             <img class="social-list-image" src="images/social-vk.svg" alt="Вконтакте">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="social-list-button">
+          <a class="social-list-button" href="https://t.me/htmlacademy">
             <img class="social-list-image" src="images/social-telegram.svg" alt="Телеграмм">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-list-item">
-          <a class="social-list-button">
+          <a class="social-list-button" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
             <img class="social-list-image" src="images/social-youtube.svg" alt="Ютуб">
             <span class="visually-hidden">Ютуб</span>
           </a>
